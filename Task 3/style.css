@@ -14,7 +14,22 @@
 
 #nav {
   padding: 10px 30px;
+  display: flex;
 }
 
 #main h1 {
+  font-size: 350px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+}
+
+#btmlft {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#products {
+  line-height: 20px;
 }
