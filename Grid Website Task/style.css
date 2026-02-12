@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#homepage {
+  display: flex;
+  flex-direction: column;
+}
+
+#nav {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1.5fr;
+  grid-template-rows: 80px;
+  grid-template-areas: "logo content cta";
+  margin-top: 15px;
+}
+
+#Logo {
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Logo img {
+  height: 40px;
+  width: auto;
+}
+
+#Content {
+  grid-area: content;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+#Content a {
+  text-decoration: none;
+  color: black;
+}
+
+#cta {
+  grid-area: cta;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+#signup {
+  padding: 12px 25px;
+  border-radius: 25px;
+  background-color: white;
+  color: rgb(121, 175, 255);
+  border: 2px solid rgb(121, 175, 255);
+}
+
+#started {
+  padding: 12px 35px;
+  border-radius: 25px;
+  background-color: rgb(121, 175, 255);
+  color: aliceblue;
+  border: none;
+}
+
+#hero {
+  display: grid;
+  width: 95%;
+  height: 1000px;
+  border-radius: 10px;
+  margin: 30px auto;
+  grid-template-columns: 400px 1fr;
+  grid-template-rows: 300px 1fr;
+  grid-template-areas:
+    "About parah"
+    "img img ";
+  background-color: beige;
+}
+
+#firm {
+  grid-area: About;
+  background-color: aqua;
+  font-size: 30pt;
+}
+
+#aboutfirm {
+  grid-area: parah;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40px;
+  gap: 20px;
+  font-size: 16pt;
+}
+
+#img {
+  grid-area: img;
+  background-color: rgb(66, 175, 49);
+}
+
+#firmparaghraph {
+  font-weight: light;
+  line-height: 25px;
+}
+
+#buttons {
+  display: flex;
+  gap: 10px;
+}
+
+#getstarted {
+  padding: 12px 35px;
+  border-radius: 25px;
+  background-color: rgb(121, 175, 255);
+  color: aliceblue;
+  border: none;
+}
+
+#freetrail {
+  padding: 12px 25px;
+  border-radius: 25px;
+  background-color: white;
+  color: rgb(121, 175, 255);
+  border: 2px solid rgb(121, 175, 255);
+}
