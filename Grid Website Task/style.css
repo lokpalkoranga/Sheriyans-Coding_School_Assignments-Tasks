@@ -53,6 +53,7 @@ body {
   grid-area: cta;
   display: flex;
   justify-content: center;
+  padding-left: 80px;
   gap: 10px;
   align-items: center;
 }
@@ -61,14 +62,14 @@ body {
   padding: 12px 25px;
   border-radius: 25px;
   background-color: white;
-  color: rgb(121, 175, 255);
-  border: 2px solid rgb(121, 175, 255);
+  color: rgb(9, 108, 255);
+  border: 2px solid rgb(9, 108, 255);
 }
 
 #started {
   padding: 12px 35px;
   border-radius: 25px;
-  background-color: rgb(121, 175, 255);
+  background-color: rgb(9, 108, 255);
   color: aliceblue;
   border: none;
 }
@@ -76,21 +77,23 @@ body {
 #hero {
   display: grid;
   width: 95%;
-  height: 1000px;
-  border-radius: 10px;
+  height: 950px;
+  border-radius: 25px;
   margin: 30px auto;
-  grid-template-columns: 400px 1fr;
-  grid-template-rows: 300px 1fr;
+  grid-template-columns: 500px 1fr;
+  grid-template-rows: 225px 1fr;
   grid-template-areas:
     "About parah"
     "img img ";
-  background-color: beige;
+  background-color: #f6f7f9;
 }
 
 #firm {
   grid-area: About;
-  background-color: aqua;
-  font-size: 30pt;
+  font-size: 40pt;
+  display: flex;
+  justify-content: center;
+  padding-top: 65px;
 }
 
 #aboutfirm {
@@ -98,38 +101,147 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 40px;
+  padding-left: 50px;
   gap: 20px;
-  font-size: 16pt;
+  padding-top: 40px;
 }
 
 #img {
   grid-area: img;
-  background-color: rgb(66, 175, 49);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btmimg {
+  max-width: 95%;
+  height: auto;
+  border-radius: 25px;
 }
 
 #firmparaghraph {
   font-weight: light;
-  line-height: 25px;
+  font-size: 17.5px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0.32;
 }
 
 #buttons {
   display: flex;
-  gap: 10px;
+  gap: 30px;
 }
 
 #getstarted {
-  padding: 12px 35px;
-  border-radius: 25px;
-  background-color: rgb(121, 175, 255);
-  color: aliceblue;
+  padding: 18px 45px;
+  border-radius: 45px;
+  background-color: rgb(9, 108, 255);
+  color: #f6f7f9;
   border: none;
+  font-size: 17px;
 }
 
 #freetrail {
-  padding: 12px 25px;
+  padding: 16px 45px;
+  border-radius: 50px;
+  background-color: #f6f7f9;
+  color: rgb(9, 108, 255);
+  border: 2px solid rgb(9, 108, 255);
+  font-size: 17px;
+}
+
+#stats {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  gap: 50px;
+}
+
+#stats h1 {
+  font-size: 70px;
+  font-weight: lighter;
+}
+
+#stats p {
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 10px;
+  font-weight: lighter;
+  color: #9b9b9b;
+}
+
+#stats1,
+#stats2,
+#stats3,
+#stats4 {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  width: 200px;
+}
+
+#about {
+  width: 95%;
+  height: 725px;
+  background-color: #f6f7f9;
+  border-radius: 35px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 1fr;
+  grid-template-areas:
+    "Aboutus aboutImg"
+    "parah aboutImg ";
+}
+
+#Aboutus {
+  grid-area: Aboutus;
+  display: flex;
+  align-items: end;
+  padding-left: 50px;
+}
+
+#Aboutus p {
+  border: 2px solid rgb(0, 0, 0);
+  padding: 8px 30px;
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+#parah {
+  grid-area: parah;
+  padding-left: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: end;
+}
+
+#parah h1 {
+  font-weight: 200;
+  font-size: 44px;
+  letter-spacing: -1px;
+}
+
+#parah p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0.3px;
+  padding-right: 20px;
+}
+
+#aboutImg {
+  grid-area: aboutImg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#rightimg {
+  max-width: 90%;
+  height: auto;
   border-radius: 25px;
-  background-color: white;
-  color: rgb(121, 175, 255);
-  border: 2px solid rgb(121, 175, 255);
 }
