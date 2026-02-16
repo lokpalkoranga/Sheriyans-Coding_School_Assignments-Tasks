@@ -245,3 +245,45 @@ body {
   height: auto;
   border-radius: 25px;
 }
+
+#expertise {
+  width: 95%;
+  height: 1400px;
+  background-color: aquamarine;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 1fr;
+  grid-template-areas:
+    "Heading SubHeading"
+    "Teamemeber Teamemeber";
+}
+
+#expertiseHeading {
+  grid-area: Heading;
+  background-color: crimson;
+}
+
+#expertiseSubHeading {
+  grid-area: SubHeading;
+  background-color: rgb(111, 207, 46);
+}
+
+#TeamMember {
+  grid-area: Teamemeber;
+  background-color: rgb(220, 97, 20);
+}
+
+#member1 img {
+  width: 20%;
+  height: 450px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+#Card1 {
+  width: 20%;
+  height: 450px;
+  border-radius: 20px;
+  background-color: blue;
+}
