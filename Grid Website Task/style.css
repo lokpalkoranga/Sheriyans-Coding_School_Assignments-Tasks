@@ -331,6 +331,14 @@ body {
   color: white;
 }
 
+.nameandshame {
+  padding-left: 3%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 10px;
+}
+
 .name {
   font-size: 24px;
   font-weight: 550;
@@ -344,10 +352,40 @@ body {
 }
 
 .aboutAlice {
-  font-size: 16px;
-  font-weight: lighter;
+  font-size: 17px;
+  font-weight: 100;
   letter-spacing: 0.5px;
+  line-height: 150%;
+  padding-left: 3%;
+  padding-top: 10%;
+  width: 95%;
 }
 
 .SocialMediaIcons {
+  padding-top: 65%;
+  padding-left: 3%;
+  display: flex;
+  gap: 20px;
+}
+
+.SocialMediaIcons img {
+  height: 30px;
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+
+#member1 {
+  position: relative;
+}
+
+#Card1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.7s ease;
+}
+
+#Card1:hover {
+  opacity: 1;
 }
