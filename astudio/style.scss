@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(25, 25, 25);
+}
+
+html {
+  font-family: Helvetica, sans-serif;
+  color: white;
+}
+
+@mixin flex-column($gap: 0) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+}
+
+main {
+  width: 100%;
+  @include flex-column(0rem);
+
+  section {
+    width: 100%;
+    @include flex-column(0.5rem);
+    padding: 1rem;
+
+    .top {
+      width: 100%;
+
+      img {
+        width: 100%;
+        border-radius: 0.5rem;
+      }
+    }
+
+    .bottom {
+      background-color: #393939;
+      border-radius: 0.5rem;
+      @include flex-column(5rem);
+      padding: 1.2rem;
+
+      > p {
+        font-weight: 400;
+      }
+
+      .text {
+        @include flex-column(1.5rem);
+
+        h1 {
+          font-weight: 400;
+          font-size: 2.5rem;
+          text-transform: uppercase;
+          line-height: 3rem;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 1.5rem;
+          opacity: 0.5;
+          line-height: 2rem;
+        }
+
+        button {
+          width: fit-content;
+          border: none;
+          outline: none;
+          padding: 0.8rem 1.5rem;
+          border-radius: 0.5rem;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  section {
+    max-width: 1920px;
+  }
+}
+
+@media (min-width: 990px) {
+  main {
+    section {
+      flex-direction: row;
+      padding: 2rem 4rem;
+
+      .top,
+      .bottom {
+        width: 50%;
+      }
+      gap: 1rem;
+
+      .top .bottom {
+        justify-content: space-between;
+        padding: 3rem;
+
+        > p {
+          font-size: 1.2rem;
+        }
+
+        .text {
+          gap: 1.5rem;
+
+          h1 {
+            font-size: 5vw;
+            letter-spacing: 0.1rem;
+            line-height: 4.5rem;
+          }
+
+          p {
+            font-size: 1.3rem;
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*@media (min-width: 1200px) {
+  main {
+    section {
+      justify-content: center;
+    }
+  }
+}
+*/

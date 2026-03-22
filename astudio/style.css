@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(25, 25, 25);
+}
+
+html {
+  font-family: Helvetica, sans-serif;
+  color: white;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+main section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+main section .top {
+  width: 100%;
+}
+main section .top img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+main section .bottom {
+  background-color: #393939;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 1.2rem;
+}
+main section .bottom > p {
+  font-weight: 400;
+}
+main section .bottom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main section .bottom .text h1 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  line-height: 3rem;
+}
+main section .bottom .text p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  opacity: 0.5;
+  line-height: 2rem;
+}
+main section .bottom .text button {
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  outline: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 400;
+}
+main section {
+  max-width: 1920px;
+}
+
+@media (min-width: 990px) {
+  main section {
+    flex-direction: row;
+    padding: 2rem 4rem;
+  }
+  main section .top,
+  main section .bottom {
+    width: 50%;
+  }
+  main section {
+    gap: 1rem;
+  }
+  main section .top .bottom {
+    justify-content: space-between;
+    padding: 3rem;
+  }
+  main section .top .bottom > p {
+    font-size: 1.2rem;
+  }
+  main section .top .bottom .text {
+    gap: 1.5rem;
+  }
+  main section .top .bottom .text h1 {
+    font-size: 5vw;
+    letter-spacing: 0.1rem;
+    line-height: 4.5rem;
+  }
+  main section .top .bottom .text p {
+    font-size: 1.3rem;
+    width: 70%;
+  }
+}
+/*@media (min-width: 1200px) {
+  main {
+    section {
+      justify-content: center;
+    }
+  }
+}
+*//*# sourceMappingURL=style.css.map */
